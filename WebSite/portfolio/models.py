@@ -6,7 +6,7 @@ class Home(models.Model):
     name=models.CharField(max_length=25)
     text1=models.CharField(max_length=5)
     text2=models.CharField(max_length=5)
-    picture=models.ImageField(upload_to='image/')
+    #picture=models.ImageField(upload_to='media_root/image/')
     updated=models.DateTimeField(auto_now=True)
 
     def __str__(self):
@@ -16,7 +16,7 @@ class About(models.Model):
     headline=models.CharField(max_length=40)
     profession_title=models.CharField(max_length=20)
     description=models.TextField(blank=True)
-    profile_img=models.ImageField(upload_to='profile/')
+    #profile_img=models.ImageField(upload_to='media_root/profile/')
     updated=models.DateTimeField(auto_now=True)  
 
     def __str__(self):
